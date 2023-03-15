@@ -64,7 +64,7 @@ def start_round(deck, player_1, player_2):
         player_2.append(player_2_card)
 
 
-def introduce_game(deck):
+def introduce_game_settings(deck):
     print(f'вы играете колодой из {len(deck)} карт')
 
 
@@ -91,7 +91,7 @@ def main():
     player_2 = []
     deck = generate_standart_deck()
     random.shuffle(deck)
-    introduce_game(deck)
+    introduce_game_settings(deck)
     start_game_loop(deck, player_1, player_2)
     anounce_winner(player_1, player_2)
     show_results(player_1, player_2)
